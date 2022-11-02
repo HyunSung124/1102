@@ -1,0 +1,11 @@
+c = int(input())
+for _ in range(c):
+    h,w,p = map(int,input().split())
+    a = p // h+1
+    b = p % h
+
+    if p % h == 0:
+        a = p // h
+        b = h
+    result = b * 100+a
+    
